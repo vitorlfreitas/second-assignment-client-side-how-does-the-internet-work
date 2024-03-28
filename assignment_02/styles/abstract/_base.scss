@@ -1,0 +1,11 @@
+@import './variable';
+
+html, body {
+    font-family: $font;
+    font-optical-sizing: auto;
+    font-weight: 400;
+
+    width: 100vw;
+
+    color: $font-color;
+}
