@@ -1,0 +1,67 @@
+@import "../abstract/variable";
+
+.main__social-media {
+
+    margin: 30px;
+
+    &__links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+
+        &__items {
+            &-link {
+                width: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .main__social-media {
+
+        &__links {
+            &__items {
+                position: relative;
+                &-link {
+                    width: 50px;
+                    &:hover~.bubble-chat {
+                        transform: scale(1) rotate(0deg);
+                        transition-duration: 380ms;
+                        display: block;
+                    }
+                }
+                .bubble-chat {
+                    position: absolute;
+                    width: 200px;
+                    height: 50px;
+                    top: -50px;
+                    left: -76px;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    transform: scale(0) rotate(-90deg);
+                }
+
+                .facebook {
+                    background: url('../../assets/icons/bubble-chat-facebook.png');
+                }
+
+                .instagram {
+                    background: url('../../assets/icons/bubble-chat-instagram.png');
+                }
+
+                .twitter {
+                    background: url('../../assets/icons/bubble-chat-twitter.png');
+                }
+
+                .whats {
+                    background: url('../../assets/icons/bubble-chat-whatsapp.png');
+                }
+
+            }
+
+        }
+
+    }
+}

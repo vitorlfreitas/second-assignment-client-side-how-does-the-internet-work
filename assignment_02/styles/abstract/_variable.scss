@@ -1,8 +1,8 @@
 // Imports
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:slnt,wght@-10..0,100..900&family=Lumanosimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 // Fonts
 $font: 'Inter', sans-serif;
-$highlighted-font: "Bebas Neue", sans-serif;
+$highlighted-font: "Playfair Display", serif;
 
 // Colors
 $color-1: #222a2c;
@@ -11,62 +11,42 @@ $color-3: #A27B5C;
 $color-4: #DCD7C9;
 $color-5: #F1F1F1;
 $font-color: #222;
+$footer-heading-color: #999;
+$footer-color: #EEE;
 
-$darker-blue: #011826;
-$dark-blue: #011826;
+$darker-blue: #02253c;
+$dark-blue: #012a44;
 $heavy-blue: #033159;
-$light-blue: #0A89A6;
+$blue: #0a31ef;
+$light-blue: rgba(39, 72, 239, 0.600);
 $dark-green: #0e6565;
 $green: #13F2F2;
+$purple: rgb(154, 10, 239);
 
-$highlighted-font-color: #f7f7f7;
+// Background Colors
+$main-bg: #eee;
+$banner_bg: #010101;
+$page-header-bg: #222;
+$content-bg: #f9f9f9;
+$link-label-bg: #222;
+$footer-bg: #222;
+
+$print-button-hover: #3f3f3f;
+$buy-me-a-coffee-hover: #CECECE;
+
+$highlighted-font-color: #222;
 $page-header-font: "Lumanosimo", cursive;
 
 $black: #010101;
-$white: #f7f7f7;
+$white: #f1f1f1;
 
 $bg-color: #f1f1f1;
 
 // Shadows
-$shadow: #01010141;
-$shadow-destaque: #DCD7C955;
+$banner-heading-shadow: 5px 5px 10px rgba(22, 2, 101, 0.450);
+$content-shadow: 0px 0px 10px rgba(0, 0, 0, 0.250);
+$media-shadow: 4px 11px 21px rgba(0, 0, 0, 0.450);
+$media-hover-shadow: 4px 11px 23px rgba(0, 0, 0, 0.650);
 
+// Sizes
 $font-size: 16px;
-
-// Highlighted Colors
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-$green: #84c4bd;
-$gray: #dfc4d1;
-
-// Size
-$text-size: 3rem;

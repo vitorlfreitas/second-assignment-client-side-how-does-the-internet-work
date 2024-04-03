@@ -13,23 +13,37 @@
         <!-- Header of my WebSite -->
         <header class="header">
             <a class="header__logo" href="index.html">
-                <picture>
-                    <source media="(max-width: 780px)" srcset="assets/images/vf-s.png">
                     <img src="assets/images/vf-l.png" alt="LogoTipo do Site" class="header__logo-img">
-                </picture>
-                <h2 class="header__logo-text">Vitor <span>Freitas</span></h2>
+                <p class="header__logo-text">Vitor <span>Freitas</span></p>
             </a>
             <nav class="header__nav">
                 <ul class="header__nav-list">
                     <li class="header__nav-item"><a href="about.html" class="header__nav-link">About</a></li>
-                    <li class="header__nav-item"><a href="subscribe.html" class="header__nav-link">Subscribe</a></li>
+                    <li class="header__nav-item"><a href="newsletter.html" class="header__nav-link">Newsletter</a></li>
+                    <li class="header__nav-item"><a href="login.html" class="header__nav-link">Login</a></li>
                 </ul>
             </nav>
+            <nav class="menu-dropdown">
+                <button class="menu-icon" onclick="activeMenu()">
+                    <img class="menu-burger" src="assets/icons/menu-burger.png" alt="">
+                </button>
+                <ul class="menu-items">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="newsletter.html">Newsletter</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+
         </header>
         <main class="main">
             
             <section class="page-header">
-                
+                <div class="page-header__breadcrumb">
+                        <a class="page-header__breadcrumb-links" href="about.html">Home</a> /
+                        <p class="page-header__breadcrumb-page">How The Internet Works</p>
+
+
+                </div>
                 <div class="page-header__wrapper">
 
                     <div class="page-header__header-container">
@@ -45,27 +59,254 @@
                             <p>BY: <a href="about.html" target="_blank">VITOR FREITAS</a></p>
                             <p>POSTED: March 27, 2024</p>
                         </div>
-                        <div class="page-header__print">
-                            <button class="page-header__print__button" type="button" aria-label="Print this page">
-                                <p>PRINT PAGE</p>
-                            </button>
-                        </div>
+                        <button class="page-header__print__button" type="button" aria-label="Print this page">
+                            <span class="page-header__print__button-text">PRINT PAGE</span>
+                            <!-- Image found at: https://www.iconfinder.com/icons/2303185/device_document_paper_print_printer_printing_icon?coming-from=related-results -->
+                            <img class="page-header__print__button-img" src="assets/icons/printer2.png" alt="Icon of a printer">
+                            
+                        </button>
+                        
                     </div>
                 </div>
             </section>
             
-            <section class="main__banner">
-                <h1 class="main__banner-heading">How Does the Internet Work?</h1>
+            <div class="main__banner"></div>
+
+            <div class="main__social-media">
+
+                    <ul class="main__social-media__links">
+
+                        <li class="main__social-media__links__items">
+                            <a class="main__social-media__links__items-link" href="#" target="_blank" rel="noopener noreferrer">
+                                <img class="main__social-media__links__items-link" src="assets/icons/facebook-logo.png" alt="Facebook Logo">
+                            </a>
+                            <div class="bubble-chat facebook"></div>
+                        </li>
+
+                        <li class="main__social-media__links__items">
+                            <a class="main__social-media__links__items-link" href="#" target="_blank" rel="noopener noreferrer">
+                                <img class="main__social-media__links__items-link" src="assets/icons/instagram-logo.png" alt="Instagram Logo">
+                            </a>
+                            <div class="bubble-chat instagram"></div>
+                        </li>
+                        <li class="main__social-media__links__items">
+                            <a class="main__social-media__links__items-link" href="#" target="_blank" rel="noopener noreferrer">
+                                <img class="main__social-media__links__items-link" src="assets/icons/x-logo.png" alt="Twitter Logo">
+                            </a>
+                            <div class="bubble-chat twitter"></div>
+                        </li>
+                        <li class="main__social-media__links__items">
+                            <a class="main__social-media__links__items-link" href="#" target="_blank" rel="noopener noreferrer">
+                                <img class="main__social-media__links__items-link" src="assets/icons/whatsapp-logo.png" alt="Whatsapp Logo">
+                            </a>
+                            <div class="bubble-chat whats"></div>
+                        </li>
+
+                    </ul>
+            </div>
+            <section class="content">
+                <h1 class="content__heading">
+                    How The Internet Works
+                </h1>
+                <section class="content__body">
+                    <h2 class="content__body__heading">Introduction</h2>
+                    <p class="content__body__paragraph">
+                        Have you ever wondered how the Internet works? We all know how important it is in our daily lives, from ordering food to chatting with friends, the internet has made everything easier and faster.
+                    </p>
+                    <p class="content__body__paragraph">
+                        The internet is a useful tool full of information, some believe it is magic, some believe it comes from satellites, and some have never stopped to think how we all are connected.  In fact, we cannot live in a world without the Internet. Such an important thing as the internet, we need to know more about it. So, this article covers the brief history of the internet and how the internet works. This article begins with the beginning of the Internet, then explains how the Internet and websites work, and finishes by comparing old to modern websites.
+                    </p>
+                    <h2 class="content__body__heading">The Brief History of the Internet </h2>
+                    <p class="content__body__paragraph">
+                        The birth of the internet was around the 1950's. It was during the <a href="#" target="_blank" rel="noopener noreferrer">Cold War</a> time that the concept of communication networks was introduced. The idea was to create a system that could connect different computers and allow them to exchange information. Back then, the army noticed a sensible problem with data and emphasized the importance of sharing data across multiple devices within the United States military. So, if a military base were attacked and a base containing stored information was destroyed, they could recover all the data lost.
+                    </p>
+                    <p class="content__body__paragraph">
+                        In the 1960s, the ARPA (Advanced Research Projects Agency), which is a division of the United States Department of Defense, developed a network called ARPANET that shares resources from computers using packet switching. The ARPANET's original objective was to link computers in various places, which was achieved in 1969 (<a href="https://www.livescience.com/internet" target="_blank" rel="noopener noreferrer">Mears, 2022</a>).  For the Internet to work properly, the devices that use the Internet must “speak” in the same language. This connection is possible by the IP, which stands for Internet Protocol. 
+                    </p>
+                    <p class="content__body__paragraph">
+                        Over the next few decades, the internet continued to evolve and grow. In the 1980s, the World Wide Web was developed by <a href="https://www.w3.org/People/Berners-Lee/" target="_blank" rel="noopener noreferrer">Tim Berners-Lee</a>, which allowed users to access and share information through a graphical interface. 
+                    </p>
+                    <!-- Image from https://www.bitcoin-gr.org/wp-content/uploads/2016/06/Sir-Tim-Berners-Lee.jpg -->
+                    <img class="content__body-img" src="assets/images/tim-berners-lee.jpg" alt="Picture of the responsible to develop the WWW and HTML">
+
+                    <p class="content__body__paragraph">
+                        On the W3 Website, Tim Berners-Lee stated that sharing information was difficult, and that was necessary to log on to different computers to obtain and understand one piece of information (<a href="https://www.w3.org/People/Berners-Lee/Kids.html" target="_blank" rel="noopener noreferrer">Answers for young people - Tim Berners-Lee, no date</a>).  So, he developed the WWW (World Wide Web) and the HTML (Hypertext Markup Language).  With the development of the WWW people and organizations can share information effortlessly.  
+                    </p>
+                    <p class="content__body__paragraph">
+                        The World Wide Web is a complex system comprised of various technologies and protocols that work together and allow the user to have all the information on a single website page. You do not have to use different programs to check your e-mail for example. 
+                    </p>
+                    <p class="content__body__paragraph">
+                        After that, the internet grew a lot, and many technologies were born, such as CSS and JavaScript. Today, the internet is an essential part of our lives. We use it for work, entertainment, communication, and so much more. It is hard to imagine a world without it.  
+                    </p>
+                    <h2 class="content__body__heading">How Does the Internet Work?</h2>
+                    <p class="content__body__paragraph">
+                        For most of us, the Internet is virtual, we connect our device to a wi-fi connection, and then we share photos on social media, watch videos, or text our friends. But the Internet is also a physical thing.  Connectivity networks are built with three distinct layers of providers: first mile, middle mile, and last mile (<a href="https://www.usaid.gov/digital-development/barriers-investing-last-mile-connectivity" target="_blank" rel="noopener noreferrer">"Barriers to Investing in Last-Mile Connectivity", U.S. Agency for International Development, 2022</a>). The last mile is the segment of the network that connects the end-user to the internet service provider's (ISP) point of presence. 
+                    </p>
+                    <!-- Image developed by me using the Canva image editor -->
+                    <img class="content__body-img" src="assets/images/Internet.png" alt="Picture of the responsible to develop the WWW and HTML">
+                    <p class="content__body__paragraph">
+                        When we send data over the internet, it is broken down into manageable packets. Since computers can only understand the binary language, each packet is converted into bytes and then wrapped like a letter in an envelope, each envelope gets a header, which is information about where it is from and where it is going and other instructions. More specifically, the information of where it is from is the IP of the device that sends the data, and where it is going is the IP of the destination device. These envelopes are transported by radio waves to the router and go to the middle mile.
+                    </p>
+                    <p class="content__body__paragraph">
+                        By the time the data leaves the local network, it connects to the internet hubs (ISP), which serves as a gateway between the local network to the broader Internet. The ISP then takes the data and sends it onto the internet highway, which is made up of lots of different roads (networks) that connect all over the world. 
+                    </p>
+                    <p class="content__body__paragraph">
+                        Those internet providers are like huge computers connected by cables and storing all the information on the internet.  Once the message reaches the destination's ISP. It then goes to the last mile.
+                    </p>
+                    <p class="content__body__paragraph">
+                        In the last mile, the ISP seeks the destination device's IP address and sends the data to the device. The device will receive all those envelopes containing the bytes and the header. They are reassembled into the original data stream based on the sequence numbers and other information contained in the packet headers. 
+                    </p>
+                    <p class="content__body__paragraph">
+                        When data needs to travel between continents, ISPs send it through centers that manage the undersea cables that connect continents. These centers act as crucial hubs for global data transmission, ensuring that information can cross oceans fast and reach its destination in another country.
+                    </p>
+                    <div class="content__body__video-container">
+                        <iframe src="https://www.youtube.com/embed/TNQsmPf24go?si=QF9mQ5U_MU75qN5V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <h2 class="content__body__heading">How The Web Works</h2>
+                    <p class="content__body__paragraph">
+                        When you turn on your laptop, open the browser, and enter a URL, a lot happens behind the scenes to display everything on your screen. All the visual content and user interaction are managed by what we call, a client-server model. Although it may seem simple, there is a complex system working under the hood. 
+                    </p>
+                    <p class="content__body__paragraph">
+                        Before diving into how the web works, we need to get an idea about the Web Architecture. Shortly and straightforwardly, a web is divided into 2 parts, Client-Side and Server-Side. It is important to remember that the Internet and the Web are 2 different things, the Internet is the infrastructure that enables computers to connect and communicate, while the Web is the software layer that enables access to information through the Internet (<a href="https://www.youtube.com/watch?v=32Pea78eY7k" target="_blank" rel="noopener noreferrer">FourZeroThree, 2021</a>).  
+                    </p>
+                    <p class="content__body__paragraph">
+                        The client-server model is a model where the client side requests resources from the server side. These resources may include HTML documents, CSS files, JavaScript files, images, videos, and more.
+                    </p>
+                    <p class="content__body__paragraph">
+                        It begins when a user initiates a request for a specific web page by entering a URL (Uniform Resource Locator) or clicking on a link. When the user does that, the computer takes this URL and requests a copy of the web page from the server. One of the most common ways to get webpages is by the HTTP (HiperText Transfer Protocol) protocol. Protocols are like a conversation, and the HTTP is based on requests and responses and the work is centralized on the server side. There are other protocols, such as P2P, FTP, BitTorrent, SMTP, and more. But HTTP is the most common on the Web. HTTPS is the same protocol but with a layer of security for the users. 
+                    </p>
+                    <p class="content__body__paragraph">
+                        HTTP servers are stateless, meaning they do not remember previous requests. This implies that users must continually prove their identity to the server, like showing an ID each time. One way to do this is by sending a token with each request. Methods to remind the server of previous interactions include sessions and cookies. Sessions involve generating and continuously presenting a token to the server, while cookies store information on the client side for the server to recall later.
+                    </p>
+                    <img class="content__body-img" src="assets/images/url.png" alt="Picture of the responsible to develop the WWW and HTML">
+                    <p class="content__body__paragraph">
+                        A URL is a standardized address used to specify the location of a resource on the internet. First, the URL needs the Scheme, which is the protocol of the URL. A computer needs an IP address to access a website. Instead of memorizing IPs, we have Domain Name System (DNS) servers. These servers translate user-friendly domain names into IP addresses so users can access websites by typing in the domain name. DNS acts as a directory of IP addresses associated with domain names.
+                    </p>
+                    <p class="content__body__paragraph">
+                        When a user enters a domain into their browser, the user's network sends the DNS request to a configured local DNS server, often provided by the ISP.  The local DNS checks its cache for the requested domain, if it is found, it returns the associated IP immediately. Otherwise, the local DNS queries root DNS servers, which contain info about TLDs, such as .com, .org, .net. After that, the root DNS sends the IP address of the website to the local DNS, which stores it in its cache. 
+                    </p>
+                    <p class="content__body__paragraph">
+                        With the IP address, the browser connects to the web server or service associated with the domain and starts a client-model conversation. Each website, system, or company has its domain, where everything is controlled. 
+                    </p>
+                    <h2 class="content__body__heading">New Websites versus Old Websites</h2>
+                    <p class="content__body__paragraph">
+                        Elderly websites are simplistic with limited graphics and basic features, while modern websites boast sophisticated design aesthetics, interactive features, intuitive navigation systems, mobile compatibility, and accessibility features. The evolution in web design reflects shifting user preferences towards engaging and immersive digital experiences that prioritize performance optimization and inclusive design practices. 
+                    </p>
+                    <div class="websites">
+                        <div class="websites-container">
+                            <h2 class="websites-container-heading">Yahoo - 1997</h2>
+                            <img class="websites-container-img" src="assets/images/yahoo-old.png" alt="Picture of the responsible to develop the WWW and HTML">
+                        </div>
+                        <div class="arrow-right" aria-hidden="true"></div>
+                        <div class="websites-container">
+                            <h2 class="websites-container-heading">Yahoo - 2024</h2>
+                            <img class="websites-container-img" src="assets/images/yahoo-modern.png" alt="Picture of the responsible to develop the WWW and HTML">
+                        </div>
+                    </div>
+
+
+
+                    <h2 class="content__body__heading">Conclusion</h2>
+                    <p class="content__body__paragraph">
+                        The internet has evolved a lot since its Cold War origins. From a military information-sharing tool, it has become an amazing part of our daily lives. Whether we are chatting with friends, watching videos, or shopping online, the internet makes our lives easier and more fun. Terms like cloud or virtual, are just fancy terms to merchandising the computer world, the way data travels around the world is physical, and there are kilometers of cables undersea connecting the world! Plus, websites have come a long way in terms of looks and usability. Remember those old-school sites? Nowadays, websites and applications are more interactive, colorful, and animated. But for a long time, they were made to just show data.
+                    </p>
+                    <a class="bibliography-link" href="bibliography.html" aria-label="Link to the page of references">Bibliography</a>
+                </section>
+
+
             </section>
         </main>
         <!-- Footer of all pages -->
         <footer class="footer">
-            <!-- Link to the Official Griffith Website -->
+            
+            <div class="footer__content">
+            
+                <div class="footer__section footer__logo-donate">
+                    <div class="footer__logo">
+                        <img src="assets/images/vf-footer.png" alt="LogoTipo do Site" class="footer__logo-img">
+                        <p class="footer__logo-text">Vitor <span>Freitas</span></p>
+                    </div>
+                    <a href="#" class="footer__donate">
+                        <span class="footer__donate-text">Buy Me a Coffee</span>
+                        <img src="assets/icons/coffee.png" alt="Icon of a cup of coffee" class="footer__donate-icon">
+                    </a>
+                </div>
+                <div class="footer__section footer__links">
+                    <h2 class="footer__section-title">About Me</h2>
+                    <ul class="footer__section-list">
+                        <li class="footer__section-item"><a href="#" class="footer__section-link">Profile</a></li>
+                        <li class="footer__section-item"><a href="#" class="footer__section-link">Contact Me</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section footer__links">
+                    <h2 class="footer__section-title">Explore</h2>
+                    <ul class="footer__section-list">
+                        <li class="footer__section-item">
+                            <a href="#" class="footer__section-link">Articles</a>
+                        </li>
+                        <li class="footer__section-item">
+                            <a href="#" class="footer__section-link">News</a>
+                        </li>
+                        <li class="footer__section-item">
+                            <a href="#" class="footer__section-link">Courses</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__section footer__links">
+                    <h2 class="footer__section-title">Learn+</h2>
+                    <ul class="footer__section-list">
+                        <li class="footer__section-item">
+                            <a href="#" class="footer__section-link">HTML & CSS</a>
+                        </li>
+                        <li class="footer__section-item">
+                            <a href="#" class="footer__section-link">Programming Language</a>
+                        </li>
+                        <li class="footer__section-item">
+                            <a href="#" class="footer__section-link">Databases</a>
+                        </li>
+                        <li class="footer__section-item">
+                            <a href="#" class="footer__section-link">Git</a>
+                        </li>
+                        <li class="footer__section-item">
+                            <a href="#" class="footer__section-link">Algorithms</a>
+                        </li>
+                        <li class="footer__section-item">
+                            <a href="#" class="footer__section-link">Design Patterns</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
+            <div class="footer__copyright">
+                <p>&copy Vitor Freitas Personal Website - 2024. All rights reserved.</p>
+            </div>
         </footer>
         
         <!-- End of the page -->
     </div>
     <!-- End of the body tag -->
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+        const menuItems = document.querySelector('.menu-items');
+    
+        let isOpenDropdownMenu = false;
+    
+        function activeMenu() {
+            if (!isOpenDropdownMenu) {
+                menuItems.style.transform = "translateX(-372px)";
+                menuItems.style.transition = "transform 1000ms ease-in-out, opacity 1000ms ease-in-out";
+                menuItems.style.opacity = "1";
+                isOpenDropdownMenu = true;
+            }
+            else {
+                menuItems.style.transform = "translateX(0px)";
+                menuItems.style.transition = "transform 1000ms ease-in-out, opacity 1000ms ease-in-out";
+                menuItems.style.opacity = "0";
+                isOpenDropdownMenu = false;
+            }
+        }
+    </script>
+    
+
 </body>
 </html>

@@ -1,0 +1,7 @@
+@import '../abstract/variable';
+
+.main {
+    width: 100vw;
+    background-color: $main-bg;
+    padding-bottom: 20px;
+}

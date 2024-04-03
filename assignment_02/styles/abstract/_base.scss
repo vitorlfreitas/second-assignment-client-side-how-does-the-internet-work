@@ -8,4 +8,21 @@ html, body {
     width: 100vw;
 
     color: $font-color;
+
+    overflow-x: hidden;
+
+    p::selection,
+    a::selection,
+    li::selection,
+    body::selection,
+    span::selection,
+    strong::selection {
+        color: white;
+        background-color: $dark-blue;
+    }
+}
+
+a:visited {
+    color: $blue;
+    border-bottom: 2px solid $blue;
 }
